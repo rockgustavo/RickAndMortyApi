@@ -10,10 +10,10 @@ public class RickAndMorty {
 	private String status;
 	private String url;
 	private String created;
+	private String image;
 
 	private List<Episode> episodes = new ArrayList<>();
 	private List<String> episode;
-	
 
 	public RickAndMorty() {
 
@@ -59,6 +59,14 @@ public class RickAndMorty {
 		this.created = created;
 	}
 
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
 	public List<String> getEpisode() {
 		return episode;
 	}
@@ -66,7 +74,7 @@ public class RickAndMorty {
 	public void setEpisode(List<String> episode) {
 		this.episode = episode;
 	}
-	
+
 	public List<Episode> getEpisodes() {
 		return episodes;
 	}
@@ -74,4 +82,5 @@ public class RickAndMorty {
 	public void setEpisodes(List<Episode> episodes) {
 		this.episodes = episodes;
 	}
+
 }
